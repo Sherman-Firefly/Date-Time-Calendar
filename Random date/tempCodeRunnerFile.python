@@ -1,0 +1,13 @@
+import random
+import time
+
+def getRandomDate(startdate, endate):
+    print("Random date is ")
+    dateFormat= '%m/%d/%Y'
+    starttime=time.mktime(time.strptime(startdate,dateFormat))
+    endtime=time.mktime(time.strptime(endtime, dateFormat))
+    randomTime=random.randint(int(starttime, int(endtime)))
+    randomdate=time.strftime(dateFormat, time.localtime(randomTime))
+    randomdate=time.strftime(dateFormat, time.localtime(randomTime))
+    return randomdate
+print("Random date", getRandomDate("1/1/2024, 31/12/2024"))
